@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const sessions = require("express-session");
 const { render } = require("ejs");
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const oneDay = 1000 * 60 * 60 * 24;//milissegundos
 const client = require("./db");
 
